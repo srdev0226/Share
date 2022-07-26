@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+
+  "name": "SS Proxy",
+  "description": "SS Proxy",
+  "version": "1.1",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html",
+    "default_title": "SS Proxy Setting"
+  },
+
+  "permissions": [
+    "proxy",
+    "tabs",
+    "storage",
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  }
+}
